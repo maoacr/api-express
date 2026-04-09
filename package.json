@@ -1,0 +1,31 @@
+{
+  "name": "api-express",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint index.js",
+    "lint:fix": "eslint index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoacr/api-express.git"
+  },
+  "keywords": [],
+  "author": "@maoacr <iam@maoacr.com> (https://maoacr.com/)",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maoacr/api-express/issues"
+  },
+  "homepage": "https://github.com/maoacr/api-express#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  }
+}
