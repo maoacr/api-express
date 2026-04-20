@@ -3,6 +3,8 @@ const routerApi = require('./routes/index');
 const app = express();
 const port = 3000;
 
+
+
 app.get("/", (req, res) => {
   res.send("Hello Express Server");
 });
@@ -19,6 +21,7 @@ app.get("/query-params", (req, res) => {
   res.json({ name: name, price: price });
 });
 
+app.use(express.json());
 routerApi(app);
 
 app.listen(port, () => {
