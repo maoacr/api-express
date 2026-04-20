@@ -24,6 +24,14 @@ app.get("/products/:id/reviews/:reviewId", (req, res) => {
   res.json({ name: "Product " + id, reviewId: reviewId });
 });
 
+app.get("/query-params", (req, res) => {
+  const { name, price } = req.query;
+  if (!name || !price) {
+    return res.status(400).json({ error: "Name and price are required" });
+  }
+  res.json({ name: name, price: price });
+});
+
 app.listen(port, () => {
   console.log("Server is running on port 3000");
 });
